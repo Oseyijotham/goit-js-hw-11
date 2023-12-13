@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+
+
+ .search-form {
+padding-top: 20px; 
+padding-left: 105px;
+
+}
+
+ input {
+   width: 358px;
+   height: 50px;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   background-color: rgb(209, 209, 209);;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.25;
+   letter-spacing: .03em;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 16px;
+ }
+
+ .search-form button {
+   margin-left: 12px;
+   background-color: rgb(209, 209, 209);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
+   border-radius: 4px;
+   cursor: pointer;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 28px;
+   padding-right: 28px;
+   border: 1px solid rgba(15, 15, 15, 0.3);
+ }
+
+ span {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: .06em;
+ }
+
+.gallery {
+  display: grid;
+  max-width: 1140px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/*
+.info{
+font-family:'Comic Sans MS';
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555555556;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+
+
+.photo-card:hover .info,
+.photo-card:focus .info {
+  transform: translateX(0%);
+}*/
+
+
+.photo-card {
+  position: relative;
+  background-color: rgb(209, 209, 209);
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  font-family:'Comic Sans MS';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.3),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 10px 12px -6px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+img {
+  max-width: 100%;
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  transition: transform var(--animation-duration) var(--timing-function);
+}
+
+
+
+a:hover {
+  cursor: zoom-in;
+}
+
+.load-more{
+  margin-top: 20px;  
+  margin-left: 105px;
+  margin-bottom: 20px;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+}
